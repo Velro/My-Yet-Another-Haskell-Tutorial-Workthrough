@@ -1,0 +1,1 @@
+I'm keeping solutions, notes, and a copy of the book here as I teach myself Haskell out of the Yet Another Haskell Tutorial textbook

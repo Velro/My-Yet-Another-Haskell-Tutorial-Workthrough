@@ -1,0 +1,4 @@
+3.3	map isUpper "hASDFh"
+3.4	length (filter isUpper "sASDF")
+3.5	foldl max 0 [123,2,4,344]
+3.6	fst (head (tail [(1, 's'),(2, 'a'),(3,'d'),(4,'p')]))

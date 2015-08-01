@@ -1,0 +1,19 @@
+*** Overview
+I'm keeping quick notes on syntax, emacs setup, etc in here as I learn some Haskell
+I also haven't used org mode before this project so this is an experiment in using that in a constructive
+way as well.
+
+** Keybindings
+all based on https://github.com/serras/emacs-haskell-tutorial/blob/master/tutorial.md
+
+C-c C-l     open interpreter
+f8          navigate imports - NOTE: whats this do?
+** Interpreter
+- use :l for load file, probably based on working directory
+after this you can start to query variables
+
+** Chapter 3
+
+* tuples
+- fst
+- snd
