@@ -1,19 +1,80 @@
-*** Overview
+* Overview
 I'm keeping quick notes on syntax, emacs setup, etc in here as I learn some Haskell
 I also haven't used org mode before this project so this is an experiment in using that in a constructive
 way as well.
 
-** Keybindings
+* Keybindings
 all based on https://github.com/serras/emacs-haskell-tutorial/blob/master/tutorial.md
 
 C-c C-l     open interpreter
 f8          navigate imports - NOTE: whats this do?
-** Interpreter
+C-x C-s     save
+C-x C-o     other window
+* Interpreter
 - use :l for load file, probably based on working directory
 after this you can start to query variables
+- :r for reload
+- :t to find the type of a function 
 
-** Chapter 3
+* Chapter 3 - The Basics 
 
-* tuples
+** tuples
 - fst
 - snd
+** if/then
+- example :: 
+if 0
+then 10
+else -20
+** switch statement
+- example ::
+f x = 
+   case x of 
+    0 -> 1 
+    1 -> 2
+    _ -> 2
+- underscore is wildcard
+- function overloading with different param signatures is cool
+** function composition
+- composition operator "."
+- example ::
+(square . f) 1
+-above example is equivalent to square(f(1))
+- unequal is /=
+** local variables
+- let :: keyword opens block were local variables and functions can be declared
+- in :: keyword is the start of the body of the function
+
+
+
+- a function with multiple variables is called "fun 1 2 3"
+  no parantheses around the inputs!
+** Infix
+- Functions with a name that is just a symbol are inherently infix'd
+- Infix a non-default function by wrapping it in tildes
+- I'm not sure how infixing ordering would work for a function with more than 2 
+  inputs
+- Example :: infix + to be "(+) 1 3"
+- Example :: infix map to be "Char.toUpper `map` "Hello world""
+** Comments
+- use -- for lines comments
+- use {- -} for block comments
+** Recursion
+- for loops don't really exist in functional languages
+- when designing recursive functions, there will often be 
+  a base case and a recursive case
+- x:xs is head:tail
+
+** IO
+- were tutorial says import IO, put System.IO
+- '<-' operator means assign result of action, 
+  right hand symbol is not an actual function
+- while in do notation, in's are not required
+
+* Chapter 4 - Type Basics
+** overview
+- types are static
+- types are usually inferred, but explicit type definition is fine,
+  sometimes considered good style
+- use "var :: Int" to cast
+

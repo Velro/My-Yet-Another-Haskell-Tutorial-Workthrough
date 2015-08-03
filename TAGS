@@ -1,14 +1,25 @@
 
-c:/Projects/Haskell/Test.hs,63
+c:/Projects/Haskell/My-Yet-Another-Haskell-Tutorial-Workthrough/test.hs,48
+module TestTest0,1
+x x3,4
+y y4,5
+z z5,6
+
+c:/Projects/Haskell/My-Yet-Another-Haskell-Tutorial-Workthrough/Name.hs,36
+module MainMain0,1
+main main5,6
+
+c:/Projects/Haskell/My-Yet-Another-Haskell-Tutorial-Workthrough/3 - language basics\Test.hs,248
 module MainMain0,1
 main main3,4
 x x5,6
 y y6,7
 z z7,8
-
-c:/Projects/Haskell/Main.hs,63
-module MainMain0,1
-main main3,4
-x x4,5
-y y5,6
-z z6,7
+signum signum9,10
+roots roots15,16
+factorial factorial28,29
+my_length my_length31,32
+my_filter my_filter34,35
+my_fib my_fib42,43
+my_mult my_mult49,50
+my_map my_map55,56
